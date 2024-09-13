@@ -1,0 +1,13 @@
+{
+  "name": "UUID tools",
+  "description": "Now you can get, reset, set your UUID with this mod.",
+  "author": "[blue]amogus[gold]228",
+  "version": "1.0",
+  "main": "main.js",
+  "minGameVersion": "136"
+   dependencies: [
+
+    "ui_lib"
+
+]
+}
