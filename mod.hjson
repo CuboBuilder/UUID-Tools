@@ -1,0 +1,13 @@
+name: "uuid_tools"
+displayName: "UUID Tools"
+description: "Now you can get, reset, set your UUID with this mod."
+author: "[blue]amogus[gold]228"
+version: "1.0"
+hidden: true
+main: "main.js"
+minGameVersion: "136"
+repo: "CuboBuilder/UUID-Tools"
+icon: "icon.png"
+dependencies: [
+  "ui_lib"
+]
