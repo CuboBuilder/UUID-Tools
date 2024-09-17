@@ -1,20 +1,19 @@
 const ui = require("ui_lib/library");
 
 ui.addMenuButton("Reset UUID", "refresh", () => {
-    Vars.ui.showConfirm("Reset UUID", "Are you sure you want to reset UUID?", () => {
+    Vars.ui.showConfirm("Reset UUID", "Are you sure you want to reset UUID? We recommend to save it first", () => {
         Core.settings.put("uuid","");
-	Vars.ui.showInfo("UUID has been reseted. Restart game to apply changes.");
+	Vars.ui.showInfo("UUID has been reseted.");
     });
 });
 
 ui.addMenuButton("Get UUID", "paste", () => {
-    Vars.ui.showConfirm("Get UUID", "Get UUID?", () => {
-        Vars.ui.showInfo(Vars.platform.getUUID());
+	Vars.ui.showTextInput("Your UUID is below.","UUID:",Vars.platform.getUUID() {
     });
 });
 
 ui.addMenuButton("Set UUID", "wrench", () => {
-	Vars.ui.showTextInput("[red]If you mess it up and cant join servers, you must reset it!\nIt will not check the UUID for validity\n[white]The current UUID has been placed in the text field for your convenience.","UUID:",Vars.platform.getUUID(), res => {
+	Vars.ui.showTextInput("[red]Be accurate with changing UUID maybe you will can't join servers. If you have problems reset UUID.","UUID:",Vars.platform.getUUID(), res => {
         Core.settings.put("uuid",res);
     });
 });
