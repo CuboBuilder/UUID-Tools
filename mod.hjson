@@ -1,6 +1,6 @@
 name: "uuid_tools"
 displayName: "UUID Tools"
-description: "Now you can get, reset, set your UUID with this mod. Requires deltanedas/ui-lib"
+description: "Now you can get, reset, set your UUID with this mod. Inspired by Xandertron/reset-uuid. Requires deltanedas/ui-lib"
 author: "[blue]amogus[gold]228"
 version: "1.1"
 hidden: true
