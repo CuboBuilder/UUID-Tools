@@ -8,7 +8,7 @@ ui.addMenuButton("Reset UUID", "refresh", () => {
 });
 
 ui.addMenuButton("Get UUID", "paste", () => {
-	Vars.ui.showTextInput("Your UUID is below.","UUID:",Vars.platform.getUUID() {
+	Vars.ui.showTextInput("Your UUID is below.","UUID:",Vars.platform.getUUID()) {
     });
 });
 
